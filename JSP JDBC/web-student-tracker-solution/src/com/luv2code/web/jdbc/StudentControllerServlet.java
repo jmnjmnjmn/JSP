@@ -21,6 +21,7 @@ public class StudentControllerServlet extends HttpServlet {
 
 	private StudentDbUtil studentDbUtil;
 	
+	// Define datasource/connection pool for Resource Injection
 	@Resource(name="jdbc/web_student_tracker")
 	private DataSource dataSource;
 	
